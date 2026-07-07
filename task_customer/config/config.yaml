@@ -121,3 +121,24 @@ ppt:
     coverage: ["培训覆盖", "覆盖情况", "客户培训覆盖","已覆盖比例"]
     certification: ["认证", "证书", "DHIA"]
   table_specs: []
+
+email:
+  enabled: false
+  mode: "outlook"
+  cc_list: "morgan.hu@dahuatech.com; gilbert.ye@dahuatech.com"
+  subject_template: "{group_name} 客户培训覆盖进展情况 {date}"
+  group_owners:
+    "英国区": {"name": "陈拂璇 Bibu Chen", "email": "chen_fuxuan@dahuatech.com"}
+    "欧亚区": {"name": "王云鹏 Wang Yun Peng", "email": "leo.wang@dahuatech.com"}
+    "非洲区": {"name": "李舒豪; 宋涛", "email": "li_shuhao@dahuatech.com, song_tao@dahuatech.com"}
+    "中东北非区": {"name": "张兴邦 Zhang Xingbang", "email": "zhang_xingbang@dahuatech.com"}
+    "西欧区": {"name": "伍绍祥 Wu Shaoxiang", "email": "wu_shaoxiang@dahuatech.com"}
+    "国际合作部": {"name": "郑文建 Awen.zheng", "email": "zheng_wenjian1@dahuatech.com, xia_yiqing@dahuatech.com"}
+    "东南亚区": {"name": "臧晨阳 Eddy Zang", "email": "zang_chenyang@dahuatech.com"}
+    "巴西区": {"name": "Lucas Kubaski", "email": "Lucas.Kubaski@dahuatech.com"}
+    "东北欧区": {"name": "应承希 Baron Ying", "email": "baron.ying@dahuatech.com, liu_fenghao@dahuatech.com"}
+    "拉美区": {"name": "于同麟 Jason", "email": "yu_tonglin@dahuatech.com, wang_tang1@dahuatech.com, angel.nolasco@dahuatech.com, wang_wenlong2@dahuatech.com, nie_yubo@dahuatech.com, jin_sheng@dahuatech.com"}
+    "南洋区": {"name": "陈俞锋 Allen Chen", "email": "chen_yufeng2@dahuatech.com"}
+    "墨西哥区": {"name": "康礼文 Will Kang", "email": "kang_liwen@dahuatech.com"}
+    "大洋洲区": {"name": "张健 Jerry Zhang", "email": "zhang_jian@dahuatech.com"}
+    "总部": {"name": "叶冠南 Gilbert Ye, 胡明舒", "email": "gilbert.ye@dahuatech.com, morgan.hu@dahuatech.com"}

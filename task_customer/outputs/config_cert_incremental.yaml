@@ -1,0 +1,227 @@
+task_type: customer_coverage
+task_name: 客户培训覆盖分析
+paths:
+  customer_file: task_customer/data/customer_list.xlsx
+  full_customer_file: task_customer/data/全量客户accout code list 0520.xlsx
+  activity_file: task_customer/data/training_activity_records.xls
+  activity_course_file: task_customer/data/training_activity_course_details.xls
+  focus_course_file: task_customer/data/trainingCourses-关注课程列表.xls
+  cert_file: C:\Users\20359\Documents\trae_projects\huachat_openclaw-agent\task_customer/outputs/dhia_certificates_incremental.xlsx
+  latin_np_coverage_msg: task_customer/data/拉美区.msg
+  template_ppt: task_customer/data/template.pptx
+  output_dir: task_customer/outputs/
+  data_dir: task_customer/data/
+  cert_mapping_file: C:\Users\20359\Documents\trae_projects\huachat_openclaw-agent\task_customer/outputs/cert_customer_mapping_incremental.xlsx
+  cert_mapping_report_excel: task_customer/outputs/cert_mapping_report.xlsx
+  cert_mapping_report_md: task_customer/outputs/cert_mapping_report.md
+columns:
+  customer:
+    customer_id_candidates:
+    - Account Code
+    customer_name_candidates:
+    - Account Name
+    region_l2_candidates:
+    - Region
+    region_l3_candidates:
+    - Sub-Region
+    account_type_candidates:
+    - Account Type
+  full_customer:
+    customer_id_candidates:
+    - GSP客户编码
+    - Customer ID
+    - 客户ID
+    - 客户编码
+    account_code_candidates:
+    - GSP客户编码
+    - Account Code
+    - 账号
+    - 客户账号
+    customer_name_candidates:
+    - 客户名称
+    - Account Name
+    - 公司名称
+    region_l2_candidates:
+    - 大区
+    - Region CN
+    - 区域
+    region_l3_candidates:
+    - 代表处
+    - Sub-Region CN
+    - 三级部门
+    country_candidates:
+    - 国家
+    - Country
+  activity:
+    customer_id_candidates:
+    - Account Code
+    activity_id_candidates:
+    - Training No
+    activity_date_candidates:
+    - 活动日期
+    - 培训日期
+    - Date
+    - Training Date
+    - 开始时间
+    training_courses_candidates:
+    - Training Courses
+  activity_course:
+    activity_id_candidates:
+    - Training No
+    course_name_candidates:
+    - Training Courses
+  focus_course:
+    course_name_candidates:
+    - 'Training Course Name '
+    - Training Course Name
+  cert:
+    customer_id_candidates:
+    - GSP ID
+    customer_name_candidates:
+    - Company Name
+    - Customer Name
+    - 客户名称
+    - 公司名称
+    cert_type_candidates:
+    - Certificate Name
+    cert_date_candidates:
+    - 证书日期
+    - 通过日期
+    - Date
+    - Certification Date
+    region_l2_candidates:
+    - Region
+    region_l3_candidates:
+    - Sub Region
+    - Sub-Region
+    country_candidates:
+    - Country
+analysis:
+  top_n: 10
+  include_course_stats: true
+  cert_multi_type_mode: multi
+  account_type_filter: NP
+  software_cert_keywords:
+  - Software
+  latin_np_coverage_msg_required: true
+  ignore_regions:
+  - UC Region
+  region_name_map:
+    Africa: 非洲区
+    Brazil: 巴西区
+    CEE & Nordic & Turkey: 东北欧区
+    Eurasia: 欧亚区
+    International Cooperation: 国际合作部
+    Latin America: 拉美区
+    Mexico Region: 墨西哥区
+    Middle East & North Africa: 中东北非区
+    Oceania Region: 大洋洲区
+    South Pacific Region: 南洋区
+    Southeast Asia: 东南亚区
+    United Kingdom: 英国区
+    Western Europe: 西欧区
+  cert_mapping_same_region_only: true
+  cert_mapping_similarity_threshold: 0.45
+  cert_mapping_low_confidence_threshold: 0.65
+  cert_mapping_suffix_noise:
+  - ltd
+  - limited
+  - co
+  - company
+  - inc
+  - corp
+  - corporation
+  - group
+  - technology
+  - technologies
+  - tech
+  - system
+  - systems
+  - solution
+  - solutions
+  - holding
+  - holdings
+  cert_mapping_cn_region_map:
+    非洲区: 非洲区
+    巴西区: 巴西区
+    东北欧区: 东北欧区
+    欧亚区: 欧亚区
+    国际合作部: 国际合作部
+    拉美区: 拉美区
+    墨西哥区: 墨西哥区
+    中东北非区: 中东北非区
+    大洋洲区: 大洋洲区
+    南洋区: 南洋区
+    东南亚区: 东南亚区
+    英国区: 英国区
+    西欧区: 西欧区
+  cert_mapping_basis_labels:
+    direct_id_match: 账号直接匹配
+    normalized_exact: 名称标准化后完全一致
+    normalized_contains: 名称标准化后包含匹配
+    token_similarity: 名称词元相似匹配
+  cert_mapping_report_thresholds:
+    overall_unmatched_ratio_for_search: 0.35
+    region_unmatched_ratio_for_search: 0.4
+    low_confidence_ratio_for_search: 0.25
+ppt:
+  slide_title_candidates:
+    coverage:
+    - 培训覆盖
+    - 覆盖情况
+    - 客户培训覆盖
+    - 已覆盖比例
+    certification:
+    - 认证
+    - 证书
+    - DHIA
+  table_specs: []
+email:
+  enabled: false
+  mode: outlook
+  cc_list: ''
+  subject_template: '{group_name} 客户培训覆盖进展情况 {date}'
+  group_owners:
+    英国区:
+      name: 陈拂璇 Bibu Chen
+      email: chen_fuxuan@dahuatech.com
+    欧亚区:
+      name: 王云鹏 Wang Yun Peng
+      email: leo.wang@dahuatech.com
+    非洲区:
+      name: 周晓航 Zhou Xiao Hang
+      email: zhou_xiaohang@dahuatech.com
+    中东北非区:
+      name: 张兴邦 Zhang Xingbang
+      email: zhang_xingbang@dahuatech.com
+    西欧区:
+      name: 伍绍祥 Wu Shaoxiang
+      email: wu_shaoxiang@dahuatech.com
+    国际合作部:
+      name: 郑文建 Awen.zheng
+      email: zheng_wenjian1@dahuatech.com, xia_yiqing@dahuatech.com
+    东南亚区:
+      name: 臧晨阳 Eddy Zang
+      email: zang_chenyang@dahuatech.com
+    巴西区:
+      name: Lucas Kubaski
+      email: Lucas.Kubaski@dahuatech.com
+    东北欧区:
+      name: 应承希 Baron Ying
+      email: baron.ying@dahuatech.com, liu_fenghao@dahuatech.com
+    拉美区:
+      name: 于同麟 Jason
+      email: yu_tonglin@dahuatech.com, wang_tang1@dahuatech.com, angel.nolasco@dahuatech.com,
+        wang_wenlong2@dahuatech.com, nie_yubo@dahuatech.com, jin_sheng@dahuatech.com
+    南洋区:
+      name: 陈俞锋 Allen Chen
+      email: chen_yufeng2@dahuatech.com
+    墨西哥区:
+      name: 康礼文 Will Kang
+      email: kang_liwen@dahuatech.com
+    大洋洲区:
+      name: 张健 Jerry Zhang
+      email: zhang_jian@dahuatech.com
+    总部:
+      name: 叶冠南 Gilbert Ye, 胡明舒
+      email: gilbert.ye@dahuatech.com, morgan.hu@dahuatech.com

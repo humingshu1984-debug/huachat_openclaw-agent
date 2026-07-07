@@ -1,0 +1,45 @@
+
+        <html>
+        <head>
+            <style>
+                table { border-collapse: collapse; width: 100%; font-family: '微软雅黑', sans-serif; font-size: 14px; margin-bottom: 14px; }
+                th { background-color: #f2f2f2; border: 1px solid #dddddd; text-align: left; padding: 8px; }
+                td { border: 1px solid #dddddd; text-align: left; padding: 8px; }
+                ul { margin-top: 6px; }
+            </style>
+        </head>
+        <body>
+            <p>你好，</p>
+            <p>以下为 <b>非洲区</b> 的 <b>客户培训覆盖分析</b> 最新进展同步：</p>
+            
+        <div style="background:#F6F8FA;border:1px solid #E5E7EB;padding:10px 12px;border-radius:6px;margin:0 0 14px 0;">
+            <div style="font-weight:700;margin-bottom:6px;">指标定义（口径说明）</div>
+            <ol style="margin:0;padding-left:20px;">
+                <li><b>NP客户数量</b>：纳入统计的客户数（来自客户清单，过滤 Account Type == NP，剔除 ignore_regions）。</li>
+                <li><b>已覆盖个数</b>：该维度下已覆盖客户数量。已覆盖判定=客户参加过至少 1 次关注课程（focus course）对应的培训活动；拉美区额外包含 .msg 邮件正文表格匹配命中的覆盖客户。</li>
+                <li><b>已覆盖比例</b>：已覆盖个数 / NP客户数量 × 100%。</li>
+                <li><b>DHIA认证通过个数</b>：该维度下已通过 DHIA 认证的客户数（证书清单匹配到该客户）。</li>
+                <li><b>DHIA认证通过比例</b>：DHIA认证通过个数 / NP客户数量 × 100%。</li>
+                <li><b>Software认证通过个数</b>：证书名称（Certificate Name）包含 “Software”（大小写不敏感）的客户数。</li>
+                <li><b>Software认证通过比例</b>：Software认证通过个数 / NP客户数量 × 100%。</li>
+                <li><b>代表处（四级部门）</b>：邮件明细表中的最细组织维度，来自客户清单字段 region_l3（代表处/三级部门等字段映射后得到）。</li>
+            </ol>
+        </div>
+        
+            
+        <p><b>大区整体情况：</b></p>
+        <ul>
+            <li>NP客户数量：24</li>
+            <li>已覆盖：7（29.17%）</li>
+            <li>DHIA认证通过：3（12.50%）</li>
+            <li>Software认证通过：0（0.00%）</li>
+        </ul>
+        
+            
+        <p><b>代表处（四级部门）明细：</b></p>
+        <table><thead><tr><th>大区内排名</th><th>代表处（四级部门）</th><th>NP客户数量</th><th>已覆盖个数</th><th>已覆盖比例</th><th>DHIA认证通过比例</th><th>Software认证通过比例</th></tr></thead><tbody><tr><td>1</td><td>Tanzania Group</td><td>4</td><td>2</td><td>50.00%</td><td>75.00%</td><td>0.00%</td></tr><tr><td>2</td><td>Kenya Group</td><td>9</td><td>4</td><td>44.44%</td><td>0.00%</td><td>0.00%</td></tr><tr><td>3</td><td>South Africa Group</td><td>5</td><td>1</td><td>20.00%</td><td>0.00%</td><td>0.00%</td></tr><tr><td>4</td><td>Nigeria Group</td><td>6</td><td>0</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr></tbody></table>
+        
+            <p>祝好！</p>
+        </body>
+        </html>
+        

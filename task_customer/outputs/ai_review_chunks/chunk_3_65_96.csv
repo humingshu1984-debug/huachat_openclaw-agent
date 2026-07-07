@@ -1,0 +1,33 @@
+﻿ai_review_row_id,cert_gsp_id,cert_company_name,cert_region,cert_sub_region,source_customer_id,source_customer_name,source_region,source_sub_region,mapped_customer_id,mapped_customer_name,mapped_region,mapped_sub_region,match_score,match_basis
+65,A2022050200460,PROCONNECT INSTALACOES LTDA,巴西区,Brazil Group,,PROCONNECT INSTALACOES LTDA,,,A2023120700724,3CORP TECHNOLOGY INFRAESTRUTURA DE TELECOM LTDA.,巴西区,Brazil Group,0.5079,名称词元相似匹配
+66,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,1.0,账号直接匹配
+67,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,1.0,账号直接匹配
+68,A2022032512874,FIBERX DISTRIBUIDORA DE PRODUTOS DE TELECOMUNICACOES LTDA,巴西区,Brazil Group,,FIBERX DISTRIBUIDORA DE PRODUTOS DE TELECOMUNICACOES LTDA,,,A2021073018336,"CLD Construtora, Lacos Detetores e Eletronica Ltda.",巴西区,Brazil Group,0.5283,名称词元相似匹配
+69,A2022121401124,HOW BE TECNOLOGIA E SOLUCOES LTDA,巴西区,Brazil Group,,HOW BE TECNOLOGIA E SOLUCOES LTDA,,,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,0.6415,名称词元相似匹配
+70,A2018092900151,SPECTRA SISTEMAS INTEGRADOS LTDA,巴西区,Brazil Group,,SPECTRA SISTEMAS INTEGRADOS LTDA,,,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,0.5075,名称词元相似匹配
+71,A2023042000384,AIPLATES TECNOLOGIA LTDA,巴西区,Brazil Group,,AIPLATES TECNOLOGIA LTDA,,,A2017122400004,IPQ Tecnologia LTDA,巴西区,Brazil Group,0.8372,名称词元相似匹配
+72,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,1.0,账号直接匹配
+73,A2019032600056,PERKONS S/A,巴西区,Brazil Group,,PERKONS S/A,,,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,0.5,名称词元相似匹配
+74,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,1.0,账号直接匹配
+75,A2021120101336,DMK3 Tecnologia Ltda,巴西区,Brazil Group,,DMK3 Tecnologia Ltda,,,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,0.85,名称词元相似匹配
+76,A2021080200948,Semper Vincit Serviços de Tecnologia da Informação LTDA,巴西区,Brazil Group,,Semper Vincit Serviços de Tecnologia da Informação LTDA,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.5045,名称词元相似匹配
+77,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,1.0,账号直接匹配
+78,A2022121200780,TELC. TELECOM. EMPREENDIMENTOS LTDA,巴西区,Brazil Group,,TELC. TELECOM. EMPREENDIMENTOS LTDA,,,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,0.5574,名称词元相似匹配
+79,A2023040600428,AGORA SOLUCOES EM TECNOLOGIA DA INFORMACAO E COMUNICACAO S A,巴西区,Brazil Group,,AGORA SOLUCOES EM TECNOLOGIA DA INFORMACAO E COMUNICACAO S A,,,A2018041300019,"TECNO - IT, TECNOLOGIA, SERVICOS E COMUNICACAO SA",巴西区,Brazil Group,0.6286,名称词元相似匹配
+80,A2016110700010,Dahua Technology Poland Sp. z o.o.,东北欧区,Poland Group,,Dahua Technology Poland Sp. z o.o.,,,A2019090900184,YUNEX SP Z O O,东北欧区,Poland Group,0.6286,名称词元相似匹配
+81,A2022081600648,ENGIS TECNOLOGIA LTDA,巴西区,Brazil Group,,ENGIS TECNOLOGIA LTDA,,,A2017122400004,IPQ Tecnologia LTDA,巴西区,Brazil Group,0.85,名称词元相似匹配
+82,A2018092000040,INTELSEG SISTEMAS DE SEGURANCA LTDA,巴西区,Brazil Group,,INTELSEG SISTEMAS DE SEGURANCA LTDA,,,A2024120500574,TELEFONICA INFRAESTRUTURA E SEGURANCA LTDA,巴西区,Brazil Group,0.6753,名称词元相似匹配
+83,A2022061811444,Fastlink Computer Co.,南洋区,Philippines Group,,Fastlink Computer Co.,,,A2022081400254,Fastel Services Inc.,南洋区,Philippines Group,0.5,名称词元相似匹配
+84,A2018120502808,UAE Hassoun,中东北非区,UAE Group,,UAE Hassoun,,,A2024062100086,WE ONE,中东北非区,UAE Group,0.4706,名称词元相似匹配
+85,A2021101822862,Spectrum International LLC,中东北非区,UAE Group,,Spectrum International LLC,,,A2018030600006,Omnix International LLC,中东北非区,UAE Group,0.7755,名称词元相似匹配
+86,A2024082200320,NETS INTERNATIONAL COMMUNICATION L.L.C,中东北非区,UAE Group,,NETS INTERNATIONAL COMMUNICATION L.L.C,,,A2019110100004,Delta International Projects & Engineering L.L.C,中东北非区,UAE Group,0.6667,名称词元相似匹配
+87,A2018072600031,SIBCA Electronics Equipment Company Limited - LLC,中东北非区,UAE Group,,SIBCA Electronics Equipment Company Limited - LLC,,,A2020070200157,LTS Electromechanical Equipment installation LLC,中东北非区,UAE Group,0.6582,名称词元相似匹配
+88,A2023091200384,Technopro Plus,拉美区,Colombia Group,,Technopro Plus,,,A2018090400975,Telconet S.A.,拉美区,Colombia Group,0.4615,名称词元相似匹配
+89,A2025032100264,Glovis Technologies LLC,中东北非区,UAE Group,,Glovis Technologies LLC,,,A2018120503309,NFS technologies LLC,中东北非区,UAE Group,0.5882,名称词元相似匹配
+90,A2025121500269,Dangote Industry Limited-Solomon,非洲区,Nigeria Group,,Dangote Industry Limited-Solomon,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.4762,名称词元相似匹配
+91,A2025121500270,Dangote Industries Limited-Othniel Olowe,非洲区,Nigeria Group,,Dangote Industries Limited-Othniel Olowe,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.56,名称词元相似匹配
+92,A2025121500274,Dangote industries limited - Nnabuchi Micheal,非洲区,Nigeria Group,,Dangote industries limited - Nnabuchi Micheal,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.5283,名称词元相似匹配
+93,A2025121500272,Dangote Industries Limited-Gbenga,非洲区,Nigeria Group,,Dangote Industries Limited-Gbenga,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.6512,名称词元相似匹配
+94,A2024111200812,SIGMAFONE COMUNICACOES UNIFICADAS LTDA,巴西区,Brazil Group,,SIGMAFONE COMUNICACOES UNIFICADAS LTDA,,,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,0.4545,名称词元相似匹配
+95,A2018100900002,CIJUN COMPANHIA DE INFORMATICA DE JUNDIAI,巴西区,Brazil Group,,CIJUN COMPANHIA DE INFORMATICA DE JUNDIAI,,,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,0.6364,名称词元相似匹配
+96,A2021082033700,MANTIS TECNOLOGIA,巴西区,Brazil Group,,MANTIS TECNOLOGIA,,,A2024100400348,AIDC TECNOLOGIA LTDA,巴西区,Brazil Group,0.7027,名称词元相似匹配

@@ -235,14 +235,22 @@ class CustomerCoverageAnalyzer:
                     break
         return matched
 
-    def analyze(self, use_cert_mapping=True):
+    def analyze(self, use_cert_mapping=True, region_filter=None):
         customer_df = self._read_excel(self.paths.get("customer_file"), "customer_file")
+        full_customer_df = None
+        full_customer_path = self.paths.get("full_customer_file")
+        if full_customer_path and os.path.exists(full_customer_path):
+            try:
+                full_customer_df = self._read_excel(full_customer_path, "full_customer_file")
+            except Exception:
+                full_customer_df = None
         activity_df = self._read_excel(self.paths.get("activity_file"), "activity_file")
         activity_course_df = self._read_excel(self.paths.get("activity_course_file"), "activity_course_file")
         focus_course_df = self._read_excel(self.paths.get("focus_course_file"), "focus_course_file")
         cert_df = self._read_excel(self.paths.get("cert_file"), "cert_file")
 
         customer_cols = self.columns.get("customer", {}) or {}
+        full_customer_cols = self.columns.get("full_customer", {}) or {}
         activity_cols = self.columns.get("activity", {}) or {}
         activity_course_cols = self.columns.get("activity_course", {}) or {}
         focus_course_cols = self.columns.get("focus_course", {}) or {}
@@ -253,6 +261,9 @@ class CustomerCoverageAnalyzer:
         region_l2_col = self._pick_col(customer_df, customer_cols.get("region_l2_candidates"), label="二级部门/大区(客户清单)")
         region_l3_col = self._pick_col(customer_df, customer_cols.get("region_l3_candidates"), required=False, label="三级部门/代表处(客户清单)")
         account_type_col = self._pick_col(customer_df, customer_cols.get("account_type_candidates"), required=False, label="客户类型(客户清单)")
+        country_col = None
+        if customer_cols.get("country_candidates"):
+            country_col = self._pick_col(customer_df, customer_cols.get("country_candidates"), required=False, label="国家(客户清单)")
 
         act_cust_id_col = self._pick_col(activity_df, activity_cols.get("customer_id_candidates"), label="客户ID(活动记录)")
         act_id_col = self._pick_col(activity_df, activity_cols.get("activity_id_candidates"), label="活动ID(活动记录)")
@@ -273,9 +284,52 @@ class CustomerCoverageAnalyzer:
         customer_dim["region_l2"] = customer_df[region_l2_col].astype(str).str.strip()
         customer_dim["region_l3"] = customer_df[region_l3_col].astype(str).str.strip() if region_l3_col else "未知"
         customer_dim["account_type"] = customer_df[account_type_col].astype(str).str.strip() if account_type_col else ""
+        customer_dim["country"] = customer_df[country_col].astype(str).str.strip() if country_col else ""
+        customer_dim["region_l3_cn"] = ""
+        customer_dim["country_cn"] = ""
         customer_dim = customer_dim[customer_dim["customer_id"].str.len() > 0].copy()
         customer_dim.loc[customer_dim["region_l2"].isin(["", "nan", "None"]), "region_l2"] = "未知"
         customer_dim.loc[customer_dim["region_l3"].isin(["", "nan", "None"]), "region_l3"] = "未知"
+
+        if full_customer_df is not None and not full_customer_df.empty:
+            try:
+                full_account_code_col = self._pick_col(
+                    full_customer_df,
+                    full_customer_cols.get("account_code_candidates"),
+                    required=False,
+                    label="Account Code(全量客户清单)",
+                )
+                full_region_l3_cn_col = self._pick_col(
+                    full_customer_df,
+                    full_customer_cols.get("region_l3_candidates"),
+                    required=False,
+                    label="代表处CN(全量客户清单)",
+                )
+                full_country_col = self._pick_col(
+                    full_customer_df,
+                    full_customer_cols.get("country_candidates"),
+                    required=False,
+                    label="国家(全量客户清单)",
+                )
+                if full_account_code_col:
+                    full_map = pd.DataFrame()
+                    full_map["customer_id"] = full_customer_df[full_account_code_col].astype(str).str.strip()
+                    full_map["region_l3_cn_full"] = full_customer_df[full_region_l3_cn_col].astype(str).str.strip() if full_region_l3_cn_col else ""
+                    full_map["country_cn_full"] = full_customer_df[full_country_col].astype(str).str.strip() if full_country_col else ""
+                    full_map = full_map[full_map["customer_id"].str.len() > 0].drop_duplicates(subset=["customer_id"])
+                    customer_dim = customer_dim.merge(full_map, on="customer_id", how="left")
+                    customer_dim["region_l3_cn"] = customer_dim["region_l3_cn"].fillna("").astype(str).str.strip()
+                    customer_dim["country_cn"] = customer_dim["country_cn"].fillna("").astype(str).str.strip()
+                    if "region_l3_cn_full" in customer_dim.columns:
+                        src = customer_dim["region_l3_cn_full"].fillna("").astype(str).str.strip()
+                        customer_dim.loc[customer_dim["region_l3_cn"].isin(["", "nan", "None"]), "region_l3_cn"] = src
+                        customer_dim = customer_dim.drop(columns=["region_l3_cn_full"])
+                    if "country_cn_full" in customer_dim.columns:
+                        src = customer_dim["country_cn_full"].fillna("").astype(str).str.strip()
+                        customer_dim.loc[customer_dim["country_cn"].isin(["", "nan", "None"]), "country_cn"] = src
+                        customer_dim = customer_dim.drop(columns=["country_cn_full"])
+            except Exception:
+                pass
 
         account_type_filter = str(self.analysis_cfg.get("account_type_filter", "") or "").strip()
         if account_type_filter and "account_type" in customer_dim.columns:
@@ -288,6 +342,11 @@ class CustomerCoverageAnalyzer:
         region_name_map = self.analysis_cfg.get("region_name_map", {}) or {}
         if region_name_map:
             customer_dim["region_l2"] = customer_dim["region_l2"].apply(lambda x: region_name_map.get(str(x).strip(), str(x).strip()))
+
+        if region_filter:
+            region_set = set([str(x).strip() for x in region_filter if str(x).strip()])
+            if region_set:
+                customer_dim = customer_dim[customer_dim["region_l2"].isin(region_set)].copy()
 
         customer_dim = customer_dim.drop_duplicates(subset=["customer_id"])
 
@@ -310,7 +369,7 @@ class CustomerCoverageAnalyzer:
         activity = activity[activity["customer_id"].str.len() > 0].copy()
 
         activity = activity.merge(
-            customer_dim[["customer_id", "customer_name", "region_l2", "region_l3", "account_type"]],
+            customer_dim[["customer_id", "customer_name", "region_l2", "region_l3", "account_type", "country", "region_l3_cn", "country_cn"]],
             on="customer_id",
             how="inner",
         )

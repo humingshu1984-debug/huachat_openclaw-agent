@@ -41,6 +41,7 @@ def launch_gui():
     task_items = [
         ("任务1（必知必会）", "config/config.yaml"),
         ("任务2（DHIA Software）", "task_software/config/config.yaml"),
+        ("任务3（客户培训覆盖）", "task_customer/config/config.yaml"),
     ]
 
     root = tk.Tk()
@@ -203,10 +204,13 @@ def launch_gui():
     exclude_var = tk.StringVar(value="无")
     email_mode_var = tk.StringVar(value="正式发送")
 
+    def _is_all_group_label(v):
+        return str(v or "").strip() in {"全部（所有三级部门）", "全部（所有大区）"}
+
     def build_command():
         config_path = dict(task_items).get(task_var.get(), "config/config.yaml")
         args = [sys.executable, "-X", "utf8", os.path.join(repo_root, "main.py")]
-        if group_var.get() and group_var.get() != "全部（所有三级部门）":
+        if group_var.get() and not _is_all_group_label(group_var.get()):
             args.append(f"--小组={group_var.get()}")
         if exclude_var.get() and exclude_var.get() != "无":
             args.append(f"--排除小组={exclude_var.get()}")
@@ -215,6 +219,8 @@ def launch_gui():
             args.append("--test-email")
         elif mode == "不发邮件":
             args.append("--no-email")
+        elif mode == "正式发送" and config_path.replace("\\", "/").endswith("task_customer/config/config.yaml"):
+            args.append("--force-email")
         args.append(f"--config={config_path}")
         return args
 
@@ -359,7 +365,8 @@ def launch_gui():
     task_cb = ttk.Combobox(top, textvariable=task_var, values=[t[0] for t in task_items], state="readonly", width=28)
     task_cb.grid(row=0, column=1, sticky="w", pady=6)
 
-    ttk.Label(top, text="小组（三级部门）：").grid(row=0, column=2, sticky="w", padx=(18, 8), pady=6)
+    group_label = ttk.Label(top, text="小组（三级部门）：")
+    group_label.grid(row=0, column=2, sticky="w", padx=(18, 8), pady=6)
     group_values = ["全部（所有三级部门）"] + groups
     group_cb = ttk.Combobox(top, textvariable=group_var, values=group_values, state="readonly", width=28)
     group_cb.grid(row=0, column=3, sticky="w", pady=6)
@@ -368,6 +375,44 @@ def launch_gui():
     exclude_values = ["无"] + groups
     exclude_cb = ttk.Combobox(top, textvariable=exclude_var, values=exclude_values, state="readonly", width=18)
     exclude_cb.grid(row=0, column=5, sticky="w", pady=6)
+
+    def _load_customer_regions():
+        config_path = dict(task_items).get(task_var.get(), "config/config.yaml")
+        try:
+            with open(os.path.join(repo_root, config_path), "r", encoding="utf-8") as f:
+                cfg = yaml.safe_load(f) or {}
+            if cfg.get("task_type") != "customer_coverage":
+                return None
+            owners = (cfg.get("email", {}) or {}).get("group_owners", {}) or {}
+            regions = [str(k).strip() for k in owners.keys() if str(k).strip() and str(k).strip() != "总部"]
+            regions = sorted(set(regions))
+            return regions
+        except Exception:
+            return None
+
+    def _on_task_changed(*_):
+        config_path = dict(task_items).get(task_var.get(), "config/config.yaml")
+        regions = _load_customer_regions()
+        if regions is not None:
+            group_label.config(text="大区：")
+            all_label = "全部（所有大区）"
+            new_group_values = [all_label] + regions
+            new_exclude_values = ["无"] + regions
+        else:
+            group_label.config(text="小组（三级部门）：")
+            all_label = "全部（所有三级部门）"
+            new_group_values = [all_label] + groups
+            new_exclude_values = ["无"] + groups
+
+        group_cb.config(values=new_group_values)
+        exclude_cb.config(values=new_exclude_values)
+        if group_var.get() not in new_group_values:
+            group_var.set(all_label)
+        if exclude_var.get() not in new_exclude_values:
+            exclude_var.set("无")
+        refresh_preview()
+
+    task_var.trace_add("write", _on_task_changed)
 
     email_frame = ttk.Labelframe(content, text="邮件选项", padding=10)
     email_frame.pack(fill="x", pady=(10, 8))
@@ -504,6 +549,9 @@ def main():
     rep_mode = "--代表处" in sys.argv
     email_disabled = "--no-email" in sys.argv
     test_email_only = "--test-email" in sys.argv
+    email_preview = "--email-preview" in sys.argv
+    force_email = "--force-email" in sys.argv
+    test_recipient = "morgan.hu@dahuatech.com"
     group_scope = None
     exclude_scope = None
 
@@ -540,6 +588,10 @@ def main():
             if raw:
                 group_scope = group_scope or set()
                 group_scope.add(raw)
+        if arg.startswith("--test-recipient="):
+            raw = arg.split("=", 1)[1].strip()
+            if raw:
+                test_recipient = raw
     
     # 允许通过命令行指定配置文件，默认为 config/config.yaml
     config_path = "config/config.yaml"
@@ -603,6 +655,30 @@ def main():
                 output_path=output_ppt,
             )
             print(f"✅ PPT: {output_ppt}")
+
+            print("\n[阶段4] 正在准备发送邮件通知...")
+            if email_disabled:
+                print("ℹ️ 已指定 --no-email，跳过邮件发送。")
+            else:
+                try:
+                    from modules.customer_email_sender import CustomerEmailSender
+
+                    email_sender = CustomerEmailSender(config_path)
+                    region_filter = None
+                    if group_scope:
+                        region_filter = set(group_scope)
+                    elif test_email_only:
+                        region_filter = {"非洲区"}
+                    email_sender.send_customer_coverage_notifications(
+                        dfs,
+                        region_filter=region_filter,
+                        test_email_only=test_email_only,
+                        test_recipient=test_recipient,
+                        preview_only=email_preview,
+                        force_send=force_email,
+                    )
+                except Exception as e:
+                    print(f"❌ 邮件发送流程出错: {e}")
 
             print("\n" + "=" * 60)
             print("分析任务圆满完成！")
@@ -778,7 +854,8 @@ def main():
             rep_mode=rep_mode,
             group_filter=notify_filter,
             exclude_filter=exclude_scope,
-            test_email_only=test_email_only
+            test_email_only=test_email_only,
+            test_recipient=test_recipient
         )
     except Exception as e:
         print(f"❌ 邮件发送流程出错: {e}")

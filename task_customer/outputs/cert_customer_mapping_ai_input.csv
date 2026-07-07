@@ -1,0 +1,129 @@
+﻿ai_review_row_id,cert_gsp_id,cert_company_name,cert_region,cert_sub_region,source_customer_id,source_customer_name,source_region,source_sub_region,mapped_customer_id,mapped_customer_name,mapped_region,mapped_sub_region,match_score,match_basis
+1,A2018120503232,Thasaamah Technology W.L.L,中东北非区,Qatar Group,,Thasaamah Technology W.L.L,,,A2019102800032,TRAFFIC TECH (GULF) W.L.L,中东北非区,Qatar Group,0.4848,名称词元相似匹配
+2,A2025091300123,PCS SOLUTION,中东北非区,Morocco Group,,PCS SOLUTION,,,A2022091600424,PCS INVEST,中东北非区,Morocco Group,0.85,名称标准化后包含匹配
+3,A2026051000170,NetSec SK s. r. o.,东北欧区,Czech Group,,NetSec SK s. r. o.,,,A2025092500250,Mark2 Corporation Slovakia s.r.o.,东北欧区,Czech Group,0.5143,名称词元相似匹配
+4,A2026050800314,Devjee International Trading Pty Ltd,非洲区,South Africa Group,,Devjee International Trading Pty Ltd,,,A2021031914418,MOTSHWANELO INFORMATION TECHNOLOGY CONSLUTING(PTY) LTD,非洲区,South Africa Group,0.5429,名称词元相似匹配
+5,A2026051100080,almalath al arabia,中东北非区,Saudi Arabia Group,,almalath al arabia,,,A2023090200182,Al Malath Al Arabia Company,中东北非区,Saudi Arabia Group,0.973,名称词元相似匹配
+6,A2018042500012,TransTelecom,欧亚区,Kazakhstan Group,,TransTelecom,,,A2018072100009,Kazakhtelecom JSC,欧亚区,Kazakhstan Group,0.5517,名称词元相似匹配
+7,A2024050400050,Light Way,中东北非区,East Mediterranean Group,A2024050400050,Light Way,中东北非区,East Mediterranean Group,A2024050400050,Light Way,中东北非区,East Mediterranean Group,1.0,账号直接匹配
+8,A2020091110682,Sanadc,中东北非区,Saudi Arabia Group,,Sanadc,,,A2021121517910,Atadtech,中东北非区,Saudi Arabia Group,0.5714,名称词元相似匹配
+9,A2019092000032,NHA Electronics,中东北非区,Tunisia Group,A2019092000032,NHA Electronics,中东北非区,Tunisia Group,A2019092000032,NHA Electronics,中东北非区,Tunisia Group,1.0,账号直接匹配
+10,A2023011500092,U2C Unified Communication Concept,中东北非区,Tunisia Group,A2023011500092,U2C Unified Communication Concept,中东北非区,Tunisia Group,A2023011500092,U2C Unified Communication Concept,中东北非区,Tunisia Group,1.0,账号直接匹配
+11,A2023051700688,Inel security,中东北非区,Tunisia Group,,Inel security,,,A2020070200218,Ell Jaber Security,中东北非区,Tunisia Group,0.7097,名称词元相似匹配
+12,A2021122226008,Espace telecom,中东北非区,Tunisia Group,,Espace telecom,,,A2023040200152,Giga Telecom & Technology,中东北非区,Tunisia Group,0.6923,名称词元相似匹配
+13,A2026042200290,3S,中东北非区,Tunisia Group,,3S,,,A2021032921306,3S STANDARD Sharing Software,中东北非区,Tunisia Group,0.85,名称标准化后包含匹配
+14,A2020070200218,Ell Jaber Security,中东北非区,Tunisia Group,A2020070200218,Ell Jaber Security,中东北非区,Tunisia Group,A2020070200218,Ell Jaber Security,中东北非区,Tunisia Group,1.0,账号直接匹配
+15,A2023041100334,3S SECURITY,中东北非区,Tunisia Group,,3S SECURITY,,,A2020070200218,Ell Jaber Security,中东北非区,Tunisia Group,0.6207,名称词元相似匹配
+16,A2022051205172,Soteme sfax,中东北非区,Tunisia Group,,Soteme sfax,,,A2018122800048,EPE RETELEM SPA,中东北非区,Tunisia Group,0.4615,名称词元相似匹配
+17,A2020101506682,HPS TUNISIE,中东北非区,Tunisia Group,,HPS TUNISIE,,,A2019092000032,NHA Electronics,中东北非区,Tunisia Group,0.4615,名称词元相似匹配
+18,A2026042700088,Blocks Trading And Contracting,中东北非区,Qatar Group,,Blocks Trading And Contracting,,,A2023110200286,first group for general trading & contracting,中东北非区,Qatar Group,0.6269,名称词元相似匹配
+19,A2026042700246,Servisecur Vigilancia Privada,西欧区,Spain Group,,Servisecur Vigilancia Privada,,,A2021010705532,"Visotrónica, S.A",西欧区,Spain Group,0.4545,名称词元相似匹配
+20,A2019123000024,"INT Intelligence and Telecom Technologies México, S.A. de C.V",墨西哥区,Mexico Group,A2019123000024,"INT Intelligence and Telecom Technologies México, S.A. de C.V",墨西哥区,Mexico Group,A2019123000024,"INT Intelligence and Telecom Technologies México, S.A. de C.V",墨西哥区,Mexico Group,1.0,账号直接匹配
+21,A2026042800216,PT Datacore Cipta Integrasi,南洋区,Indonesia Group,,PT Datacore Cipta Integrasi,,,A2023091300338,PT Cipta Sistem Integrasi,南洋区,Indonesia Group,0.6923,名称词元相似匹配
+22,A2021033022144,Hassoun Group,中东北非区,Saudi Arabia Group,,Hassoun Group,,,A2023060500740,Harmonic Systems,中东北非区,Saudi Arabia Group,0.5333,名称词元相似匹配
+23,A2025032200174,Eyecam security,中东北非区,UAE Group,,Eyecam security,,,A2019100100006,Atlas Security LLC,中东北非区,UAE Group,0.6061,名称词元相似匹配
+24,A2018120503750,LIVETECH DA BAHIA INDUSTRIA E COMERCIO S.A.,巴西区,Brazil Group,,LIVETECH DA BAHIA INDUSTRIA E COMERCIO S.A.,,,A2018041300019,"TECNO - IT, TECNOLOGIA, SERVICOS E COMUNICACAO SA",巴西区,Brazil Group,0.4828,名称词元相似匹配
+25,A2024011700204,PT. Performa Optima Komputindo,南洋区,Indonesia Group,,PT. Performa Optima Komputindo,,,A2023062200036,PT PERFORMA OPTIMA KOMPUTINDO,南洋区,Indonesia Group,1.0,名称标准化后完全一致
+26,A2019031800054,DAHUA TECHNOLOGY BRASIL COMÉRCIO E SERVIÇOS EM SEGURANÇA ELETRÔNICA LTDA,巴西区,Brazil Group,,DAHUA TECHNOLOGY BRASIL COMÉRCIO E SERVIÇOS EM SEGURANÇA ELETRÔNICA LTDA,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.5593,名称词元相似匹配
+27,A2021051807932,BLOKO TECNOLOGIA E INFRAESTRUTURA,巴西区,Brazil Group,,BLOKO TECNOLOGIA E INFRAESTRUTURA,,,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,0.566,名称词元相似匹配
+28,A2024010300224,COMDADOS COMERCIO E SERVICOS ELETRONICOS LTDA.,巴西区,Brazil Group,,COMDADOS COMERCIO E SERVICOS ELETRONICOS LTDA.,,,A2022121401104,Led Wave Paineis Eletronicos LTDA,巴西区,Brazil Group,0.6154,名称词元相似匹配
+29,A2018120503662,DCA DELTA CABLE AMERICAS LTDA,巴西区,Brazil Group,,DCA DELTA CABLE AMERICAS LTDA,,,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,0.4898,名称词元相似匹配
+30,A2018092900152,BRAKO COMERCIO DE EQUIPAMENTOS ELETRONICOS LTDA,巴西区,Brazil Group,,BRAKO COMERCIO DE EQUIPAMENTOS ELETRONICOS LTDA,,,A2022121401104,Led Wave Paineis Eletronicos LTDA,巴西区,Brazil Group,0.6,名称词元相似匹配
+31,A2023012000458,REDEPRIME LOGISTICA DO BRASIL LTDA,巴西区,Brazil Group,,REDEPRIME LOGISTICA DO BRASIL LTDA,,,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,0.5455,名称词元相似匹配
+32,A2018011800009,INTERJATO SERVICOS DE TELECOMUNICACOES LTDA,巴西区,Brazil Group,,INTERJATO SERVICOS DE TELECOMUNICACOES LTDA,,,A2018041300019,"TECNO - IT, TECNOLOGIA, SERVICOS E COMUNICACAO SA",巴西区,Brazil Group,0.6136,名称词元相似匹配
+33,A2017111300008,TALENTECH - TECNOLOGIA LTDA,巴西区,Brazil Group,,TALENTECH - TECNOLOGIA LTDA,,,A2024100400348,AIDC TECNOLOGIA LTDA,巴西区,Brazil Group,0.8,名称词元相似匹配
+34,A2025101200161,Sillis-Solucoes Integradas Logicas Lineares em Infraestrutura e Sistema LTDA,巴西区,Brazil Group,,Sillis-Solucoes Integradas Logicas Lineares em Infraestrutura e Sistema LTDA,,,A2024120500574,TELEFONICA INFRAESTRUTURA E SEGURANCA LTDA,巴西区,Brazil Group,0.5593,名称词元相似匹配
+35,A2018092600060,"Compania Integra Soluciones, SA de CV",墨西哥区,Mexico Group,,"Compania Integra Soluciones, SA de CV",,,A2021112932360,"SYM Servicios Integrales, SA de CV",墨西哥区,Mexico Group,0.6377,名称词元相似匹配
+36,A2023012000458,REDEPRIME LTDA,巴西区,Brazil Group,,REDEPRIME LTDA,,,A2023122200001,CONTROL - TELEINFORMATICA LTDA,巴西区,Brazil Group,0.4762,名称词元相似匹配
+37,A2020102914392,AVANTIA TECNOLOGIA E ENGENHARIA S/A - SP,巴西区,Brazil Group,A2020102914392,AVANTIA TECNOLOGIA E ENGENHARIA S/A - SP,巴西区,Brazil Group,A2020102914392,AVANTIA TECNOLOGIA E ENGENHARIA S/A - SP,巴西区,Brazil Group,1.0,账号直接匹配
+38,A2021082537292,Ac Solucoes Integradas de Informatica Ltda,巴西区,Brazil Group,,Ac Solucoes Integradas de Informatica Ltda,,,A2023122200001,CONTROL - TELEINFORMATICA LTDA,巴西区,Brazil Group,0.6571,名称词元相似匹配
+39,A2025090300277,Eagle Digital Surveillance,非洲区,Kenya Group,,Eagle Digital Surveillance,,,A2020032100052,Top Choice Surveillance Limited,非洲区,Kenya Group,0.5714,名称词元相似匹配
+40,A2021011408288,EBS Engineering Corporation,东南亚区,Vietnam Group,A2021011408288,EBS Engineering Corporation,东南亚区,Vietnam Group,A2021011408288,EBS Engineering Corporation,东南亚区,Vietnam Group,1.0,账号直接匹配
+41,A2020062300153,SOFTNET TECHNOLOGIES LIMITED,非洲区,Tanzania Group,A2020062300153,SOFTNET TECHNOLOGIES LIMITED,非洲区,Tanzania Group,A2020062300153,SOFTNET TECHNOLOGIES LIMITED,非洲区,Tanzania Group,1.0,账号直接匹配
+42,A2022020803252,Bilal camera,中东北非区,Pakistan Group,,Bilal camera,,,A2022082800198,Vital Tech International,中东北非区,Pakistan Group,0.4516,名称词元相似匹配
+43,A2026031100265,Dahua Technology Tanzania,非洲区,Tanzania Group,,Dahua Technology Tanzania,,,A2019031100073,CITCC TANZANIA LIMITED,非洲区,Tanzania Group,0.6429,名称词元相似匹配
+44,A2022011407266,INVENTIONS TECHNOLOGIES CO. LTD,非洲区,Tanzania Group,,INVENTIONS TECHNOLOGIES CO. LTD,,,A2021111008324,Emerging Communications Limited,非洲区,Tanzania Group,0.4848,名称词元相似匹配
+45,A2025062500087,khadamat facility management llc,中东北非区,UAE Group,,khadamat facility management llc,,,A2018120502085,Emirates Photo Marketing LLC,中东北非区,UAE Group,0.4667,名称词元相似匹配
+46,A2025101600154,PT. Mahira Mitra Mandiri,南洋区,Indonesia Group,,PT. Mahira Mitra Mandiri,,,A2022042310266,PT Elang Strategi Adidaya,南洋区,Indonesia Group,0.5,名称词元相似匹配
+47,A2025042500273,SAO BENTO LIGHTING SOLUTIONS LTDA,巴西区,Brazil Group,,SAO BENTO LIGHTING SOLUTIONS LTDA,,,A2023122200001,CONTROL - TELEINFORMATICA LTDA,巴西区,Brazil Group,0.549,名称词元相似匹配
+48,A2018072400032,V2 INTEGRADORA DE SOLUCOES E IMPORTACOES LTDA,巴西区,Brazil Group,,V2 INTEGRADORA DE SOLUCOES E IMPORTACOES LTDA,,,A2023120700724,3CORP TECHNOLOGY INFRAESTRUTURA DE TELECOM LTDA.,巴西区,Brazil Group,0.4938,名称词元相似匹配
+49,A2019061200036,LOGIC PRO SERVICOS DE TECNOLOGIA DA INFORMACAO LTDA,巴西区,Brazil Group,,LOGIC PRO SERVICOS DE TECNOLOGIA DA INFORMACAO LTDA,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.5741,名称词元相似匹配
+50,A2020111609584,CONNECTOWAY SOLUCOES INTELIGENTES EM TECNOLOGIA S.A,巴西区,Brazil Group,,CONNECTOWAY SOLUCOES INTELIGENTES EM TECNOLOGIA S.A,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.5,名称词元相似匹配
+51,A2021050602380,TECNOMARRA SOLUCOES EM SEGURANCA LTDA,巴西区,Brazil Group,,TECNOMARRA SOLUCOES EM SEGURANCA LTDA,,,A2024120500574,TELEFONICA INFRAESTRUTURA E SEGURANCA LTDA,巴西区,Brazil Group,0.6329,名称词元相似匹配
+52,A2023032300366,BestByte Kft.,东北欧区,Hungary Group,,BestByte Kft.,,,A2019053100038,NT SYS Kft.,东北欧区,Hungary Group,0.5455,名称词元相似匹配
+53,A2022111600600,Deniz Elektronik,东北欧区,Turkey Group,,Deniz Elektronik,,,A2021100503862,DENGE ELEKTRONIK SAN. VE TIC. LTD. STI.,东北欧区,Turkey Group,0.5957,名称词元相似匹配
+54,A2025090500240,Inversiones Geyser,拉美区,Chile Group,,Inversiones Geyser,,,A2024022700932,AVINVERSIONES S.A.,拉美区,Chile Group,0.7429,名称词元相似匹配
+55,A2017043000001,Vital,中东北非区,Pakistan Group,,Vital,,,A2022082800198,Vital Tech International,中东北非区,Pakistan Group,0.85,名称标准化后包含匹配
+56,A2020121611830,Oasis Enterprises LLC,中东北非区,UAE Group,,Oasis Enterprises LLC,,,A2023112400088,OASIS ENTERPRISES - SOLE PROPRIETORSHIP L.L.C.,中东北非区,UAE Group,0.6562,名称词元相似匹配
+57,A2026010200054,Vital Karachi,中东北非区,Pakistan Group,,Vital Karachi,,,A2022082800198,Vital Tech International,中东北非区,Pakistan Group,0.5,名称词元相似匹配
+58,A2018120501350,Spectra X Stream PVT Limited,东南亚区,South Asian Association Group,A2018120501350,Spectra X Stream PVT Limited,东南亚区,South Asian Association Group,A2018120501350,Spectra X Stream PVT Limited,东南亚区,South Asian Association Group,1.0,账号直接匹配
+59,A2024112000318,Alpha Security Services-ISB,中东北非区,Pakistan Group,,Alpha Security Services-ISB,,,A2021032216272,Creative Security & IT Solutions,中东北非区,Pakistan Group,0.5106,名称词元相似匹配
+60,A2017122400005,FONMART TECNOLOGIA LTDA,巴西区,Brazil Group,,FONMART TECNOLOGIA LTDA,,,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,0.8372,名称词元相似匹配
+61,A2020061800128,SEGURPRO TECNOLOGIA EM SISTEMAS DE SEGURANCA ELETRONICA E INCENDIOS LTDA,巴西区,Brazil Group,,SEGURPRO TECNOLOGIA EM SISTEMAS DE SEGURANCA ELETRONICA E INCENDIOS LTDA,,,A2018041300019,"TECNO - IT, TECNOLOGIA, SERVICOS E COMUNICACAO SA",巴西区,Brazil Group,0.4786,名称词元相似匹配
+62,A2017122400004,IPQ Tecnologia LTDA,巴西区,Brazil Group,A2017122400004,IPQ Tecnologia LTDA,巴西区,Brazil Group,A2017122400004,IPQ Tecnologia LTDA,巴西区,Brazil Group,1.0,账号直接匹配
+63,A2020111710140,C2h Solucoes em Servicos LTDA,巴西区,Brazil Group,,C2h Solucoes em Servicos LTDA,,,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,0.5714,名称词元相似匹配
+64,A2023120700724,3CORP TECHNOLOGY INFRAESTRUTURA DE TELECOM LTDA.,巴西区,Brazil Group,A2023120700724,3CORP TECHNOLOGY INFRAESTRUTURA DE TELECOM LTDA.,巴西区,Brazil Group,A2023120700724,3CORP TECHNOLOGY INFRAESTRUTURA DE TELECOM LTDA.,巴西区,Brazil Group,1.0,账号直接匹配
+65,A2022050200460,PROCONNECT INSTALACOES LTDA,巴西区,Brazil Group,,PROCONNECT INSTALACOES LTDA,,,A2023120700724,3CORP TECHNOLOGY INFRAESTRUTURA DE TELECOM LTDA.,巴西区,Brazil Group,0.5079,名称词元相似匹配
+66,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,1.0,账号直接匹配
+67,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,A2024010300218,TRIPLA SERVICES LTDA,巴西区,Brazil Group,1.0,账号直接匹配
+68,A2022032512874,FIBERX DISTRIBUIDORA DE PRODUTOS DE TELECOMUNICACOES LTDA,巴西区,Brazil Group,,FIBERX DISTRIBUIDORA DE PRODUTOS DE TELECOMUNICACOES LTDA,,,A2021073018336,"CLD Construtora, Lacos Detetores e Eletronica Ltda.",巴西区,Brazil Group,0.5283,名称词元相似匹配
+69,A2022121401124,HOW BE TECNOLOGIA E SOLUCOES LTDA,巴西区,Brazil Group,,HOW BE TECNOLOGIA E SOLUCOES LTDA,,,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,0.6415,名称词元相似匹配
+70,A2018092900151,SPECTRA SISTEMAS INTEGRADOS LTDA,巴西区,Brazil Group,,SPECTRA SISTEMAS INTEGRADOS LTDA,,,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,0.5075,名称词元相似匹配
+71,A2023042000384,AIPLATES TECNOLOGIA LTDA,巴西区,Brazil Group,,AIPLATES TECNOLOGIA LTDA,,,A2017122400004,IPQ Tecnologia LTDA,巴西区,Brazil Group,0.8372,名称词元相似匹配
+72,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,A2024052900748,Transvia Engenharia e Sistemas LTDA,巴西区,Brazil Group,1.0,账号直接匹配
+73,A2019032600056,PERKONS S/A,巴西区,Brazil Group,,PERKONS S/A,,,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,0.5,名称词元相似匹配
+74,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,A2019110400063,Telefonica Brasil S.A.,巴西区,Brazil Group,1.0,账号直接匹配
+75,A2021120101336,DMK3 Tecnologia Ltda,巴西区,Brazil Group,,DMK3 Tecnologia Ltda,,,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,0.85,名称词元相似匹配
+76,A2021080200948,Semper Vincit Serviços de Tecnologia da Informação LTDA,巴西区,Brazil Group,,Semper Vincit Serviços de Tecnologia da Informação LTDA,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.5045,名称词元相似匹配
+77,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,1.0,账号直接匹配
+78,A2022121200780,TELC. TELECOM. EMPREENDIMENTOS LTDA,巴西区,Brazil Group,,TELC. TELECOM. EMPREENDIMENTOS LTDA,,,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,0.5574,名称词元相似匹配
+79,A2023040600428,AGORA SOLUCOES EM TECNOLOGIA DA INFORMACAO E COMUNICACAO S A,巴西区,Brazil Group,,AGORA SOLUCOES EM TECNOLOGIA DA INFORMACAO E COMUNICACAO S A,,,A2018041300019,"TECNO - IT, TECNOLOGIA, SERVICOS E COMUNICACAO SA",巴西区,Brazil Group,0.6286,名称词元相似匹配
+80,A2016110700010,Dahua Technology Poland Sp. z o.o.,东北欧区,Poland Group,,Dahua Technology Poland Sp. z o.o.,,,A2019090900184,YUNEX SP Z O O,东北欧区,Poland Group,0.6286,名称词元相似匹配
+81,A2022081600648,ENGIS TECNOLOGIA LTDA,巴西区,Brazil Group,,ENGIS TECNOLOGIA LTDA,,,A2017122400004,IPQ Tecnologia LTDA,巴西区,Brazil Group,0.85,名称词元相似匹配
+82,A2018092000040,INTELSEG SISTEMAS DE SEGURANCA LTDA,巴西区,Brazil Group,,INTELSEG SISTEMAS DE SEGURANCA LTDA,,,A2024120500574,TELEFONICA INFRAESTRUTURA E SEGURANCA LTDA,巴西区,Brazil Group,0.6753,名称词元相似匹配
+83,A2022061811444,Fastlink Computer Co.,南洋区,Philippines Group,,Fastlink Computer Co.,,,A2022081400254,Fastel Services Inc.,南洋区,Philippines Group,0.5,名称词元相似匹配
+84,A2018120502808,UAE Hassoun,中东北非区,UAE Group,,UAE Hassoun,,,A2024062100086,WE ONE,中东北非区,UAE Group,0.4706,名称词元相似匹配
+85,A2021101822862,Spectrum International LLC,中东北非区,UAE Group,,Spectrum International LLC,,,A2018030600006,Omnix International LLC,中东北非区,UAE Group,0.7755,名称词元相似匹配
+86,A2024082200320,NETS INTERNATIONAL COMMUNICATION L.L.C,中东北非区,UAE Group,,NETS INTERNATIONAL COMMUNICATION L.L.C,,,A2019110100004,Delta International Projects & Engineering L.L.C,中东北非区,UAE Group,0.6667,名称词元相似匹配
+87,A2018072600031,SIBCA Electronics Equipment Company Limited - LLC,中东北非区,UAE Group,,SIBCA Electronics Equipment Company Limited - LLC,,,A2020070200157,LTS Electromechanical Equipment installation LLC,中东北非区,UAE Group,0.6582,名称词元相似匹配
+88,A2023091200384,Technopro Plus,拉美区,Colombia Group,,Technopro Plus,,,A2018090400975,Telconet S.A.,拉美区,Colombia Group,0.4615,名称词元相似匹配
+89,A2025032100264,Glovis Technologies LLC,中东北非区,UAE Group,,Glovis Technologies LLC,,,A2018120503309,NFS technologies LLC,中东北非区,UAE Group,0.5882,名称词元相似匹配
+90,A2025121500269,Dangote Industry Limited-Solomon,非洲区,Nigeria Group,,Dangote Industry Limited-Solomon,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.4762,名称词元相似匹配
+91,A2025121500270,Dangote Industries Limited-Othniel Olowe,非洲区,Nigeria Group,,Dangote Industries Limited-Othniel Olowe,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.56,名称词元相似匹配
+92,A2025121500274,Dangote industries limited - Nnabuchi Micheal,非洲区,Nigeria Group,,Dangote industries limited - Nnabuchi Micheal,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.5283,名称词元相似匹配
+93,A2025121500272,Dangote Industries Limited-Gbenga,非洲区,Nigeria Group,,Dangote Industries Limited-Gbenga,,,A2025120100135,ARI Industries FZE,非洲区,Nigeria Group,0.6512,名称词元相似匹配
+94,A2024111200812,SIGMAFONE COMUNICACOES UNIFICADAS LTDA,巴西区,Brazil Group,,SIGMAFONE COMUNICACOES UNIFICADAS LTDA,,,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,0.4545,名称词元相似匹配
+95,A2018100900002,CIJUN COMPANHIA DE INFORMATICA DE JUNDIAI,巴西区,Brazil Group,,CIJUN COMPANHIA DE INFORMATICA DE JUNDIAI,,,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,0.6364,名称词元相似匹配
+96,A2021082033700,MANTIS TECNOLOGIA,巴西区,Brazil Group,,MANTIS TECNOLOGIA,,,A2024100400348,AIDC TECNOLOGIA LTDA,巴西区,Brazil Group,0.7027,名称词元相似匹配
+97,A2021081025658,NETCON LTDA,巴西区,Brazil Group,,NETCON LTDA,,,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,0.5641,名称词元相似匹配
+98,A2019100800007,Arc Comercio Construcao e Administracao de Servicos LTDA,巴西区,Brazil Group,,Arc Comercio Construcao e Administracao de Servicos LTDA,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.5133,名称词元相似匹配
+99,A2018041000005,ENERGY TELECOM COMERCIO E SERVICOS LTDA,巴西区,Brazil Group,,ENERGY TELECOM COMERCIO E SERVICOS LTDA,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.6042,名称词元相似匹配
+100,A2018122900112,RADIUM TELECOMUNICACOES LTDA,巴西区,Brazil Group,,RADIUM TELECOMUNICACOES LTDA,,,A2020012900022,Net Telecom Informatica Ltda,巴西区,Brazil Group,0.6071,名称词元相似匹配
+101,A2017060400001,Emirates Transport Technology Solutions,中东北非区,UAE Group,,Emirates Transport Technology Solutions,,,A2018120502085,Emirates Photo Marketing LLC,中东北非区,UAE Group,0.5217,名称词元相似匹配
+102,A2018120503309,NFS technologies LLC,中东北非区,UAE Group,A2018120503309,NFS technologies LLC,中东北非区,UAE Group,A2018120503309,NFS technologies LLC,中东北非区,UAE Group,1.0,账号直接匹配
+103,A2021111008324,Emerging Communications Limited,非洲区,Tanzania Group,A2021111008324,Emerging Communications Limited,非洲区,Tanzania Group,A2021111008324,Emerging Communications Limited,非洲区,Tanzania Group,1.0,账号直接匹配
+104,A2022040100374,Spectrum Security Systems LLC,中东北非区,UAE Group,,Spectrum Security Systems LLC,,,A2019100100006,Atlas Security LLC,中东北非区,UAE Group,0.7179,名称词元相似匹配
+105,A2025091600314,INSYNC INTERNATIONAL TECHNICAL SERVICES L.L.C,中东北非区,UAE Group,,INSYNC INTERNATIONAL TECHNICAL SERVICES L.L.C,,,A2022062314544,DYNAMIC INTERNATIONAL COMMERCIAL AGENCIES,中东北非区,UAE Group,0.6512,名称词元相似匹配
+106,A2022082900202,Dubai Technologies,中东北非区,UAE Group,,Dubai Technologies,,,A2023083100364,PACC INFORMATION AND COMMUNICATION TECHNOLOGY L L C - DUBAI BRANCH,中东北非区,UAE Group,0.85,名称标准化后包含匹配
+107,A2025111200188,behran parsian,中东北非区,UAE Group,,behran parsian,,,A2019063000033,spectrum car design,中东北非区,UAE Group,0.4848,名称词元相似匹配
+108,A2019062000032,Alsaher International Electronic System,中东北非区,UAE Group,,Alsaher International Electronic System,,,A2018030600006,Omnix International LLC,中东北非区,UAE Group,0.6182,名称词元相似匹配
+109,A2025112500220,Phoenix,非洲区,Tanzania Group,,Phoenix,,,A2022080200564,PHOENIX LTD,非洲区,Tanzania Group,1.0,名称标准化后完全一致
+110,A2025111400161,PT. Visio Andalan Teknologi,南洋区,Indonesia Group,,PT. Visio Andalan Teknologi,,,A2020122616948,Uptrans Teknologi,南洋区,Indonesia Group,0.6512,名称词元相似匹配
+111,A2025112400074,Inara International,中东北非区,UAE Group,,Inara International,,,A2022042913208,KTC International,中东北非区,UAE Group,0.7778,名称词元相似匹配
+112,A2019062000082,Asesorias DAC-CONTROLS Limitada,拉美区,Chile Group,A2019062000082,Asesorias DAC-CONTROLS Limitada,拉美区,Chile Group,A2019062000082,Asesorias DAC-CONTROLS Limitada,拉美区,Chile Group,1.0,账号直接匹配
+113,A2024103100542,CU SECURITY,拉美区,Peru Group,,CU SECURITY,,,A2023061400762,CU SECURITY E.I.R.L.,拉美区,Peru Group,0.85,名称标准化后包含匹配
+114,A2025101300158,PT. Kirana Cipta Indonesia,南洋区,Indonesia Group,,PT. Kirana Cipta Indonesia,,,A2018042700132,PT.SECOM INDONESIA,南洋区,Indonesia Group,0.6512,名称词元相似匹配
+115,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,1.0,账号直接匹配
+116,A2022022711500,ERIONE - ERIVAL TELECOMUNICACOES COMERCIO E REPRESENTACOES LTDA,巴西区,Brazil Group,,ERIONE - ERIVAL TELECOMUNICACOES COMERCIO E REPRESENTACOES LTDA,,,A2018021000003,MAHVLA TELECOMM CONSULTORIA E SERVICOS EM TECNOLOGIA LTDA,巴西区,Brazil Group,0.4746,名称词元相似匹配
+117,A2018092900153,POLICOM CABOS E CONECTORES LTDA,巴西区,Brazil Group,,POLICOM CABOS E CONECTORES LTDA,,,A2024010300232,ZOOM TECNOLOGIA LTDA,巴西区,Brazil Group,0.4706,名称词元相似匹配
+118,A2019080500013,PT. Integra Mitra Solusi,南洋区,Indonesia Group,,PT. Integra Mitra Solusi,,,A2018101100004,Pt.tunas gemilang solusitama,南洋区,Indonesia Group,0.5882,名称词元相似匹配
+119,A2021030100648,DATAPROM EQUIPAMENTOS E SERVICOS DE INFORMATICA INDUSTRIALLTDA,巴西区,Brazil Group,,DATAPROM EQUIPAMENTOS E SERVICOS DE INFORMATICA INDUSTRIALLTDA,,,A2020031000050,COMPWIRE INFORMATICA LTDA.,巴西区,Brazil Group,0.5057,名称词元相似匹配
+120,A2022072500544,AREIA DO TEMPO COMERCIAL LTDA,巴西区,Brazil Group,,AREIA DO TEMPO COMERCIAL LTDA,,,A2024100400348,AIDC TECNOLOGIA LTDA,巴西区,Brazil Group,0.6122,名称词元相似匹配
+121,A2023031300480,DIGITAL TECNOLOGIA DA INFORMACAO E SEGURANCA LTDA - DT SEGURANCA,巴西区,Brazil Group,,DIGITAL TECNOLOGIA DA INFORMACAO E SEGURANCA LTDA - DT SEGURANCA,,,A2024120500574,TELEFONICA INFRAESTRUTURA E SEGURANCA LTDA,巴西区,Brazil Group,0.5385,名称词元相似匹配
+122,A2023071400698,Alia Tecnologia Solucoes em Tic e Energia LTDA,巴西区,Brazil Group,,Alia Tecnologia Solucoes em Tic e Energia LTDA,,,A2017122400014,AVANTIA TECNOLOGIA E ENGENHARIA S/A,巴西区,Brazil Group,0.6173,名称词元相似匹配
+123,A2020082858888,PT Argenta Akhila Utama,南洋区,Indonesia Group,A2020082858888,PT Argenta Akhila Utama,南洋区,Indonesia Group,A2020082858888,PT Argenta Akhila Utama,南洋区,Indonesia Group,1.0,账号直接匹配
+124,A2025093000319,Bezavic Int'l Services,非洲区,Nigeria Group,,Bezavic Int'l Services,,,A2020090200844,MASTERPLAN Consulting & Technology Services Ltd (MpCTS),非洲区,Nigeria Group,0.4828,名称词元相似匹配
+125,A2025040800460,IT Solution Pvt Ltd.,东南亚区,South Asian Association Group,,IT Solution Pvt Ltd.,,,A2018120200017,Optimal Technology (Pvt). Ltd.,东南亚区,South Asian Association Group,0.5882,名称词元相似匹配
+126,A2022101700618,International Business Systems IBS,中东北非区,Egypt Group,,International Business Systems IBS,,,A2017041400011,ARAB INTERNATIONAL OPTRONICS,中东北非区,Egypt Group,0.5556,名称词元相似匹配
+127,A2025092900152,Wefee pty Ltd,大洋洲区,Australia Group,,Wefee pty Ltd,,,A2023103000054,Wireless Networks Pty Ltd,大洋洲区,Australia Group,0.5333,名称词元相似匹配
+128,A2023061600274,Intelligent Network Solution Sdn. Bhd.,南洋区,Malaysia Group,,Intelligent Network Solution Sdn. Bhd.,,,A2022111100010,Aero Network & Technologies Sdn Bhd,南洋区,Malaysia Group,0.7234,名称词元相似匹配

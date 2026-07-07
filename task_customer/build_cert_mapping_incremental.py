@@ -164,7 +164,8 @@ def _build_review_todo(
 
     must_rows = []
     suggest_rows = []
-    for _, base in (new_preview or pd.DataFrame()).iterrows():
+    src_preview = new_preview if new_preview is not None else pd.DataFrame()
+    for _, base in src_preview.iterrows():
         cert_id = str(base.get("cert_gsp_id", "")).strip()
         if not cert_id:
             continue
