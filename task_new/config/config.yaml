@@ -1,0 +1,36 @@
+task_name: "新任务（请修改）"
+
+paths:
+  input_files:
+    - "task_new/data/input.xlsx"
+  previous_analysis: "task_new/outputs/combined_analysis.xlsx"
+  template_ppt: "data/PPT模板.pptx"
+  output_dir: "task_new/outputs/"
+  data_dir: "task_new/data/"
+
+analysis:
+  weekly_report_day: "Monday"
+  thresholds:
+    completion_green: 100.0
+    completion_yellow: 80.0
+    pass_red: 80.0
+
+email:
+  enabled: true
+  mode: "outlook"
+  cc_list: "gilbert.ye@dahuatech.com; morgan.hu@dahuatech.com"
+  subject_template: "{group_name} 新任务进展情况 {date}"
+  body_template: |
+    您好，
+
+    这是 {group_name} 的最新进度汇总：
+    - 整体完成率：{completion_rate}%
+    - 总人数：{total_count}
+    - 已完成人数：{completed_count}
+    - 未完成人数：{uncompleted_count}
+
+    附件中是该小组对应的未完成人员名单，请协助督促其尽快完成。
+
+    祝好！
+  group_owners:
+    "总部": {"name": "负责人", "email": "owner@example.com"}

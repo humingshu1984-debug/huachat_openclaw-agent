@@ -1,0 +1,92 @@
+【新会话开场模板（复制粘贴即可）】
+
+项目：huachat_openclaw-agent
+
+我希望你从当前仓库文件状态继续，不要依赖历史对话记忆。
+
+【上次会话记录（可直接复制参考）】
+
+最近一次需求：按指定大区分别运行「任务1（必知必会）」与「任务2（DHIA Software）」；需要三级部门全量排名；如开启代表处模式需输出四级部门明细，并发邮件给指定大区负责人。
+
+关键约定/逻辑：
+- 排名口径：始终在所有三级部门里排名；仅“发邮件/导出四级明细/附件范围”按指定大区过滤
+- 邮件附件默认：每封邮件默认附上该三级部门对应的所有四级部门“未完成学员清单”附件（无需额外参数）
+- 常用参数：
+  - --小组=西欧区（或其它大区名）
+  - --代表处 + --代表处范围=西欧区（需要四级部门明细时）
+  - --config=task_software/config/config.yaml（软件任务）
+  - --no-email（只生成文件不发邮件）
+  - --test-email（测试邮件：仅发 Morgan.hu@dahuatech.com，不抄送，标题带【测试】）
+  - --排除小组=墨西哥区（排除某些三级部门，不发送邮件给这些小组）
+
+已更新收件人：
+- 拉美区：yu_tonglin@dahuatech.com + wang_tang1@dahuatech.com
+- 东北欧区：baron.ying@dahuatech.com + liu_fenghao@dahuatech.com
+
+工作区/新应用场景：
+- 新建了一个独立工作区目录：workspaces/huachat_new-app（与培训分析分开）
+- 入口：workspaces/huachat_new-app/main.py
+
+邮件模板确认（已OK）：
+- 排名表：展示本轮排名/完成率 + 上一轮排名/完成率
+- 测试邮件规则：只要是测试邮件，仅发 Morgan.hu@dahuatech.com（不抄送），标题带【测试】
+
+最近执行过的示例命令（可按大区替换）：
+- 任务1（西欧区，含代表处明细并发邮件）：
+  python main.py --代表处 --代表处范围=西欧区 --小组=西欧区
+- 任务2（西欧区，含代表处明细并发邮件）：
+  python main.py --代表处 --代表处范围=西欧区 --小组=西欧区 --config=task_software/config/config.yaml
+- 任务1（拉美区，含代表处明细并发邮件）：
+  python main.py --代表处 --代表处范围=拉美区 --小组=拉美区
+- 任务2（拉美区，含代表处明细并发邮件）：
+  python main.py --代表处 --代表处范围=拉美区 --小组=拉美区 --config=task_software/config/config.yaml
+- 任务1（排除墨西哥区，跑其它所有三级部门并发邮件；含四级部门附件）：
+  python main.py --代表处 --排除小组=墨西哥区
+- 任务2（排除墨西哥区，跑其它所有三级部门并发邮件；含四级部门附件）：
+  python main.py --代表处 --排除小组=墨西哥区 --config=task_software/config/config.yaml
+
+任务类型：（选择其一）
+1）必知必会（任务1）
+2）DHIA Software（任务2 / task_software）
+3）新任务示例（任务3 / task_new）
+
+本次目标：
+- （一句话说明你要达成的结果）
+
+运行方式：
+- 测试模式：是/否（是：只发中东北非区到测试邮箱）
+- 代表处模式：是/否（是：生成四级明细、邮件含代表处摘要与四级附件）
+- 代表处范围（可选）：（例如：拉美区,中东北非区）
+- 小组/大区范围（可选）：（例如：西欧区；或 拉美区,中东北非区）
+
+配置文件：
+- 任务1：config/config.yaml
+- 任务2：task_software/config/config.yaml
+- 任务3：task_new/config/config.yaml
+- 本次使用：____________________
+
+建议执行命令（按需填写）：
+- 任务1（普通）：python main.py
+- 任务1（仅某大区）：python main.py --小组=西欧区
+- 任务1（不发邮件）：python main.py --no-email
+- 任务1（代表处+范围）：python main.py --代表处 --代表处范围=拉美区
+- 任务2（普通）：python main.py --config=task_software/config/config.yaml
+- 任务2（仅某大区）：python main.py --小组=西欧区 --config=task_software/config/config.yaml
+- 任务2（不发邮件）：python main.py --no-email --config=task_software/config/config.yaml
+- 任务2（代表处+范围）：python main.py --代表处 --代表处范围=拉美区,中东北非区 --config=task_software/config/config.yaml
+- 任务3（普通）：python main.py --config=task_new/config/config.yaml
+- 任务3（代表处+范围）：python main.py --代表处 --代表处范围=拉美区 --config=task_new/config/config.yaml
+
+本次输入数据位置（按需说明）：
+- 任务1：data/data1.xlsx + data/data2.xlsx
+- 任务2：task_software/data/software_learning_data.xlsx
+- 任务3：task_new/data/
+- 我已更新的数据文件是：____________________
+
+输出我关心的结果：
+- 汇总Excel：combined_analysis.xlsx（是否需要多Sheet：是/否）
+- PPT：final_weekly_report*.pptx
+- 邮件：是否需要发送：是/否；是否抄送总部：是/否；总部是否带附件：是/否
+
+补充约束/偏好：
+- （例如：只发送某些大区、附件命名规则、邮件正文措辞、颜色阈值等）

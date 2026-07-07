@@ -1,0 +1,7 @@
+playwright
+pandas
+python-pptx
+openpyxl
+pyyaml
+lxml
+pillow

@@ -1,0 +1,65 @@
+# 培训分析工具配置 (多数据源版)
+
+# 任务基本信息
+task_name: "2026极客行动必知必会学习"
+
+# 文件路径配置
+paths:
+  # 您下载好的原始 Excel 文件列表
+  input_files:
+    - "data/data1.xlsx"
+    - "data/data2.xlsx"
+  # 上一轮的汇总分析文件（可选，用于排名对比）
+  previous_analysis: "outputs/combined_analysis.xlsx"
+  template_ppt: "reports/templates/template.pptx"
+  output_dir: "outputs/"
+  data_dir: "data/"
+
+# 数据分析配置
+analysis:
+  weekly_report_day: "Monday"
+  thresholds:
+    completion_green: 100.0
+    completion_yellow: 80.0
+    pass_red: 80.0
+
+# 邮件通知配置
+email:
+  enabled: true # 是否开启邮件发送功能
+  mode: "outlook" # 默认使用本地 Outlook 客户端模式 (无需 SMTP 配置)
+  cc_list: "gilbert.ye@dahuatech.com; morgan.hu@dahuatech.com" # 默认抄送人名单
+  
+  # 邮件内容模板
+  subject_template: "{group_name}2026极客必知必会学习进展情况{date}"
+  body_template: |
+    您好，
+
+    这是 {group_name} 的最新学习进度汇总：
+    - 整体完成率：{completion_rate}%
+    - 总人数：{total_count}
+    - 已完成人数：{completed_count}
+    - 未完成人数：{uncompleted_count}
+
+    附件中是该小组对应的未完成人员名单，请协助督促其尽快完成学习。
+
+    祝好！
+
+  # 小组负责人映射 (根据 大区解决方案主管-名单.xlsx 更新)
+  group_owners:
+    "英国区": {"name": "陈拂璇 Bibu Chen", "email": "chen_fuxuan@dahuatech.com"}
+    "欧亚区": {"name": "王云鹏 Wang Yun Peng", "email": "leo.wang@dahuatech.com"}
+    "非洲区": {"name": "周晓航 Zhou Xiao Hang", "email": "zhou_xiaohang@dahuatech.com"}
+    "中东北非区": {"name": "张兴邦 Zhang Xingbang", "email": "zhang_xingbang@dahuatech.com"}
+    "西欧区": {"name": "伍绍祥 Wu Shaoxiang", "email": "wu_shaoxiang@dahuatech.com"}
+    "国际合作部": {"name": "郑文建 Awen.zheng", "email": "zheng_wenjian1@dahuatech.com, xia_yiqing@dahuatech.com"}
+    "东南亚区": {"name": "臧晨阳 Eddy Zang", "email": "zang_chenyang@dahuatech.com"}
+    "巴西区": {"name": "Lucas Kubaski", "email": "Lucas.Kubaski@dahuatech.com"}
+    "东北欧区": {"name": "应承希 Baron Ying", "email": "baron.ying@dahuatech.com, liu_fenghao@dahuatech.com"}
+    "拉美区": {"name": "于同麟 Jason", "email": "yu_tonglin@dahuatech.com, wang_tang1@dahuatech.com, angel.nolasco@dahuatech.com, wang_wenlong2@dahuatech.com, nie_yubo@dahuatech.com, jin_sheng@dahuatech.com"}
+    "南洋区": {"name": "陈俞锋 Allen Chen", "email": "chen_yufeng2@dahuatech.com"}
+    "墨西哥区": {"name": "康礼文 Will Kang", "email": "kang_liwen@dahuatech.com"}
+    "大洋洲区": {"name": "张健 Jerry Zhang", "email": "zhang_jian@dahuatech.com"}
+    "总部": {"name": "叶冠南 Gilbert Ye, 胡明舒", "email": "gilbert.ye@dahuatech.com, morgan.hu@dahuatech.com"}
+    "测试总部": {"name": "胡明舒", "email": "morgan.hu@dahuatech.com"}
+    "测试区域（MENA默认）": {"name": "胡明舒", "email": "morgan.hu@dahuatech.com"}
+    "集成商业务部": {"name": "负责人", "email": "owner14@example.com"}
