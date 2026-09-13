@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07182f">
+  <meta name="description" content="DEME marine, offshore and visual intelligence English learning pack">
+  <title>DEME Marine English Learning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><div class="brand-mark">D</div><div class="brand-copy"><div class="brand-title">DEME Marine English</div><div class="brand-sub">Offshore · Vessel · HSE · Visual Intelligence</div></div></div></header>
+<main class="shell">
+  <section class="hero"><div><span class="eyebrow">DEME CUSTOMER LEARNING PACK</span><h1>打开就是学习页</h1><p>111 个客户相关专业术语 + 20 句现场高频表达。单词和例句使用真实 MP3，手机直接点开就能听，不再经过中间跳转页。</p></div><div class="hero-stats"><div class="stat"><strong id="statTerms">111</strong><span>核心术语</span></div><div class="stat"><strong id="statMastered">0</strong><span>已掌握</span></div><div class="stat"><strong id="statProgress">0%</strong><span>总进度</span></div></div></section>
+  <section class="quick-grid">
+    <button class="quick-card accent-cyan" data-mode="daily"><span class="quick-kicker">TODAY</span><strong>今日 10 词</strong><small>通勤 / 酒店快速复习</small></button>
+    <button class="quick-card accent-yellow" data-mode="core"><span class="quick-kicker">TOP 30</span><strong>PPT 高频词</strong><small>优先覆盖本次 DEME 汇报</small></button>
+    <button class="quick-card accent-green" data-mode="phrases"><span class="quick-kicker">SPEAK</span><strong>现场表达</strong><small>20 句可直接对客户说的话</small></button>
+    <button class="quick-card accent-blue" data-mode="review"><span class="quick-kicker">REVIEW</span><strong>复习未掌握</strong><small>自动隐藏已掌握词汇</small></button>
+  </section>
+  <section class="toolbar"><div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索英文 / 中文，例如 berth、吊装、AIS" autocomplete="off"></div><button id="flashBtn" class="primary-btn">🎯 闪卡</button><button id="listenBtn" class="secondary-btn">▶ 连续听</button></section>
+  <nav id="categoryPills" class="pills"></nav>
+  <section id="modeBanner" class="mode-banner hidden"></section>
+  <section id="content"></section>
+  <section id="phrasesSection" class="hidden"><div class="section-heading"><div><span class="eyebrow">MEETING LANGUAGE</span><h2>现场高频表达</h2></div><span id="phraseCount" class="count-chip"></span></div><div id="phraseList" class="phrase-list"></div></section>
+  <section class="learning-note"><strong>推荐学习顺序</strong><p>先学 TOP 30 → 再学现场表达 → 最后按分类补齐全部 111 词。学习进度保存在你的手机浏览器中。</p></section>
+</main>
+<div class="player-dock"><div class="player-inner"><div class="now-playing"><span class="mini-label">NOW PLAYING</span><strong id="nowTitle">点击任意发音按钮</strong><small id="nowMeta">真实 MP3 · 英式发音</small></div><audio id="audioPlayer" controls preload="metadata"></audio><button id="stopBtn" class="icon-btn" title="停止">■</button></div></div>
+<div id="flashOverlay" class="overlay hidden"><button id="closeFlash" class="close-btn">×</button><div class="flash-card"><span class="eyebrow">FLASHCARD</span><div id="flashTerm" class="flash-term"></div><div id="flashIpa" class="flash-ipa"></div><button id="flashSpeak" class="primary-btn">🔊 听发音</button><div id="flashAnswer" class="flash-answer blur-answer"><div id="flashCn" class="flash-cn"></div><p id="flashScene"></p><p id="flashExample"></p></div><div class="flash-actions"><button id="revealFlash" class="secondary-btn">显示答案</button><button id="masterFlash" class="success-btn">✓ 我会了</button><button id="nextFlash" class="secondary-btn">下一词 →</button></div></div></div>
+<script src="data/01-basics.js"></script><script src="data/02-port.js"></script><script src="data/03-vessel.js"></script><script src="data/04-hse.js"></script><script src="data/05-visual.js"></script><script src="data/06-engineering.js"></script><script src="data/07-digital.js"></script><script src="phrases.js"></script><script src="app.js"></script>
+</body></html>
